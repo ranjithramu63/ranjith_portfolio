@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="projects-page container">
+    <div class="section-header text-center">
+        <h2>My <span class="highlight">Certifications</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Professional certifications and courses I have completed.</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Certification 1 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="{{ url_for('static', filename='mongodb_certificate.jpg') }}"
+                    alt="RAG with MongoDB Certificate" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/1e293b/ffffff?text=RAG+with+MongoDB'">
+            </div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span>MongoDB</span>
+                    <span>RAG</span>
+                </div>
+                <h3>RAG with MongoDB</h3>
+                <p>Completed on: 07-26-2025</p>
+                <a href="#" class="btn-text">View Certificate <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="{{ url_for('static', filename='aws_certificate.jpg') }}"
+                    alt="AWS Data Engineering Foundations Certificate" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/1e293b/ffffff?text=AWS+Data+Engineering'">
+            </div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span>AWS</span>
+                    <span>Data Engineering</span>
+                </div>
+                <h3>Data Engineering on AWS - Foundations</h3>
+                <p>Completed on: July 27, 2025</p>
+                <a href="#" class="btn-text">View Certificate <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- Certification 3 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="{{ url_for('static', filename='ml_certificate.png') }}"
+                    alt="Machine Learning using Python Certificate" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/1e293b/ffffff?text=Machine+Learning'">
+            </div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span>Machine Learning</span>
+                    <span>Python</span>
+                </div>
+                <h3>Advanced Certificate - Machine Learning using Python</h3>
+                <p>Completed: Oct 07 - Nov 07, 2024</p>
+                <a href="#" class="btn-text">View Certificate <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
